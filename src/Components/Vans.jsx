@@ -15,7 +15,7 @@ export default function() {
     const vanEl = vanData.map(data => {
         return(
             <div key={data.id} className="van-tile">
-                <Link to={`/vans/$${data.id}`}>
+                <Link to={`/vans/${data.id}`}>
                     <img src={data.imageUrl}  />
                     <div className="van-info">
                         <p>{data.name}</p>
