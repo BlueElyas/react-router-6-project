@@ -10,6 +10,7 @@ import Dashboard from "./Pages/Host/Dashboard"
 import Income from "./Pages/Host/Income"
 import Reviews from "./Pages/Host/Reviews"
 import HostLayout from "./Components/HostLayout"
+import HostVans from "./Pages/Host/HostVans"
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route index element={<Dashboard />} /> 
             <Route path="income" element={<Income />} />
             <Route path="reviews" element={<Reviews />} />
+            <Route path="vans" element={<HostVans />} />
         </Route>
         </Route>
       </Routes>
