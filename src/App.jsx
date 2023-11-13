@@ -1,9 +1,9 @@
 import React from "react"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Home from "./Components/Home"
-import About from "./Components/About"
-import Vans from "./Components/Vans"
-import VanDetails from "./Components/VanDetails"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Vans from "./Pages/Vans"
+import VanDetails from "./Pages/VanDetails"
 
 import "./server"
 
