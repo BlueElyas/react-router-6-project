@@ -19,9 +19,9 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Vans" element={<Vans/>}/>
           <Route path="/Vans/:id" element={<VanDetails/>}/>
-          <Route path="/host" element ={<Dashboard/>}/>
-          <Route path="/host/income" element ={<Income/>}/>
-          <Route path="/host/reviews" element ={<Reviews/>}/>
+          <Route path="/Host" element ={<Dashboard/>}/>
+          <Route path="/Host/income" element ={<Income/>}/>
+          <Route path="/Host/reviews" element ={<Reviews/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
