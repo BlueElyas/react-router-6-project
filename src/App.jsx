@@ -9,6 +9,7 @@ import "./server"
 import Dashboard from "./Pages/Host/Dashboard"
 import Income from "./Pages/Host/Income"
 import Reviews from "./Pages/Host/Reviews"
+import HostLayout from "./Components/HostLayout"
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Vans" element={<Vans/>}/>
           <Route path="/Vans/:id" element={<VanDetails/>}/>
+        </Route>
+        <Route element={<HostLayout />}>
           <Route path="/host" element={<Dashboard />}>
             <Route path="/host/income" element={<Income />} />
             <Route path="/host/reviews" element={<Reviews />} />
