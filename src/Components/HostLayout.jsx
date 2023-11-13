@@ -5,8 +5,6 @@ import Header from "./Header";
 export default function HostLayout() {
     return(
         <>
-            <Header/>
-          
             <nav className="host-nav">
                 <Link to="/host">Dashboard</Link>
                 <Link to="/host/income">Income</Link>
