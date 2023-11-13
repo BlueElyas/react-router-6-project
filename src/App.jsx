@@ -5,8 +5,10 @@ import About from "./Pages/About"
 import Vans from "./Pages/Vans/Vans"
 import VanDetails from "./Pages/Vans/VanDetails"
 import Layout from "./Components/Layout"
-
 import "./server"
+import Dashboard from "./Pages/Host/Dashboard"
+import Income from "./Pages/Host/Income"
+import Reviews from "./Pages/Host/Reviews"
 
 export default function App() {
   return (
@@ -17,6 +19,9 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Vans" element={<Vans/>}/>
           <Route path="/Vans/:id" element={<VanDetails/>}/>
+          <Route path="/host" element ={<Dashboard/>}/>
+          <Route path="/host/income" element ={<Income/>}/>
+          <Route path="/host/reviews" element ={<Reviews/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
