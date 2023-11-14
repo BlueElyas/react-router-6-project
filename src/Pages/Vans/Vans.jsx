@@ -9,7 +9,11 @@ export default function Vans() {
     const typeFilter = searchParams.get("type")
 
     React.useEffect(() => {
-        
+        async function loadVans() {
+            const data = await getVans()
+            setVans(data)
+        }
+        loadVans()
     }, [])
 
     const displayedVans = typeFilter
