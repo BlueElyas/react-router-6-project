@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFireStore } from "firebase/firestore"
+import { getFireStore } from "firebase/firestore/lite"
 
 const firebaseConfig = {
   apiKey: "AIzaSyAcDpsRWFLiax29fKkeTrG7rm95HTLnVCs",
@@ -11,6 +11,11 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const db = getFireStore(app)
+
+
+
+
 
 export async function getVans(id) {
     const url = id ? `/api/vans/${id}` : "/api/vans"
